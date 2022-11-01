@@ -3,12 +3,7 @@ import type { AppProps } from "next/app";
 import DismissableToast from "@components/toast/DismissableToast";
 
 function MyApp({ Component, pageProps }: AppProps) {
-  return (
-    <>
-      <DismissableToast />
-      <Component {...pageProps} />;
-    </>
-  );
+  return <Component {...pageProps} />;
 }
 
 export default MyApp;
