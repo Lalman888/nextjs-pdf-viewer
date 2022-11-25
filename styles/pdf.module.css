@@ -1,0 +1,41 @@
+.book {
+  margin: 0;
+  padding: 0;
+  background-color: #fafafa;
+}
+
+.page {
+  display: block;
+  width: calc(100 / 23 * 21vw);
+  height: calc(100 / 23 * 29.7vw);
+  margin: calc(100 / 23 * 1vw) auto;
+  border: 1px #d3d3d3 solid;
+  border-radius: 5px;
+  background: white;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.subpage {
+  margin: calc(100 / 23 * 1vw);
+  width: calc(100 / 23 * 19vw);
+  height: calc(100 / 23 * 27.7vw);
+  outline: 0cm #fafafa solid;
+}
+
+@page {
+  size: A4;
+  margin: 0;
+}
+
+@media print {
+  .page {
+    margin: 0;
+    border: initial;
+    border-radius: initial;
+    width: initial;
+    min-height: initial;
+    box-shadow: initial;
+    background: initial;
+    page-break-after: always;
+  }
+}

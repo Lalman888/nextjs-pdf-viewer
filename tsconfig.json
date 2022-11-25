@@ -16,10 +16,11 @@
     "incremental": true,
     "paths": {
       "@components/*": ["./components/*"],
+      "@styles/*": ["./styles/*"],
       "@utils/*": ["./utils/*"],
       "@hooks/*": ["./hooks/*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "sitemap-generator"],
   "exclude": ["node_modules"]
 }
